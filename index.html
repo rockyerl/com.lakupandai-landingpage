@@ -2,20 +2,155 @@
 <html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Primary SEO Meta Tags -->
     <title>LAKUPANDAI by Sundawa | Agent Banking Platform untuk Operasional Bank</title>
-    <meta name="description" content="Platform agent banking enterprise dari Sundawa untuk memperluas jangkauan layanan dengan kendali penuh atas identitas agen, kepastian transaksi, likuiditas, dan rekonsiliasi." />
-    
-    <!-- Open Graph / Meta -->
+    <meta name="title" content="LAKUPANDAI by Sundawa | Agent Banking Platform untuk Operasional Bank" />
+    <meta name="description" content="Perluas jaringan agen dengan kendali transaksi, likuiditas, rekonsiliasi, governance, dan integrasi ke ekosistem bank. Jadwalkan diskusi solusi." />
+    <meta name="keywords" content="agent banking platform, laku pandai bank, branchless banking indonesia, core banking adapter, iso 8583, maker checker perbankan, rekonsiliasi 4 kuadran, tata kelola agent banking, sundawa teknologi indonesia" />
+    <meta name="author" content="PT Sundawa Teknologi Indonesia" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <link rel="canonical" href="https://lakupandai.sundawa.co.id/" />
+
+    <!-- Theme & App Metadata -->
+    <meta name="theme-color" content="#0E1E30" />
+    <meta name="application-name" content="LAKUPANDAI" />
+    <meta name="apple-mobile-web-app-title" content="LAKUPANDAI" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/sundawa-logo-nobg.png" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lakupandai.sundawa.co.id/" />
+    <meta property="og:site_name" content="LAKUPANDAI by Sundawa" />
     <meta property="og:title" content="LAKUPANDAI by Sundawa | Agent Banking Platform untuk Operasional Bank" />
-    <meta property="og:description" content="Satu platform untuk mengoperasikan, mengendalikan, dan mengembangkan jaringan agent banking. Powered by PT Sundawa Teknologi Indonesia." />
-    
-    <!-- Fonts: Montserrat (Official Sundawa Typeface) + JetBrains Mono for telemetry -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <meta property="og:description" content="Perluas jaringan agen dengan kendali transaksi, likuiditas, rekonsiliasi, governance, dan integrasi ke ekosistem bank. Jadwalkan diskusi solusi." />
+    <meta property="og:image" content="https://lakupandai.sundawa.co.id/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="LAKUPANDAI by Sundawa — Agent Banking Infrastructure for Banks" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://lakupandai.sundawa.co.id/" />
+    <meta name="twitter:title" content="LAKUPANDAI by Sundawa | Agent Banking Platform untuk Operasional Bank" />
+    <meta name="twitter:description" content="Perluas jaringan agen dengan kendali transaksi, likuiditas, rekonsiliasi, governance, dan integrasi ke ekosistem bank. Jadwalkan diskusi solusi." />
+    <meta name="twitter:image" content="https://lakupandai.sundawa.co.id/og-image.svg" />
+    <meta name="twitter:creator" content="@sundawa" />
+
+    <!-- Google Fonts: Montserrat (Official Sundawa Typeface) + JetBrains Mono for telemetry -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://sundawa.co.id/#organization",
+          "name": "PT Sundawa Teknologi Indonesia",
+          "url": "https://sundawa.co.id",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://lakupandai.sundawa.co.id/sundawa-logo-nobg.png"
+          },
+          "description": "Perusahaan teknologi terkemuka penyedia solusi enterprise platform dan arsitektur perbankan digital."
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://lakupandai.sundawa.co.id/#software",
+          "name": "LAKUPANDAI by Sundawa",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "RHEL 9, Linux, Containerized (Podman/OpenShift)",
+          "softwareVersion": "1.0",
+          "url": "https://lakupandai.sundawa.co.id",
+          "description": "Platform infrastruktur dan operasional agent banking enterprise untuk bank di Indonesia.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "IDR",
+            "description": "Executive Demo & Consultation"
+          },
+          "publisher": {
+            "@id": "https://sundawa.co.id/#organization"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://lakupandai.sundawa.co.id/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Apakah platform hanya dapat dijalankan di cloud?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tidak. Pendekatan arsitektur produk LAKUPANDAI dirancang untuk model on-premise pada infrastruktur data center (DC) dan disaster recovery center (DRC) bank sendiri. Platform dideploy menggunakan containerization berbasis RHEL 9 (Podman/Docker atau Kubernetes/OpenShift) sehingga bank memegang kendali 100% atas data, jaringan, dan keamanan."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Apakah harus langsung terhubung ke core banking untuk sesi evaluasi / demo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tidak. Evaluasi awal dan sesi executive walkthrough dapat dijalankan menggunakan lingkungan Standalone dengan mock connector yang dilabeli jelas. Hal ini memungkinkan direksi dan tim teknis meninjau seluruh proses operasional tanpa dependensi integrasi di awal."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Apakah transaksi uang dapat berjalan tanpa koneksi internet (offline mode)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Secara default tidak. Prinsip keamanan kami menetapkan bahwa seluruh transaksi bernilai uang (setor, tarik, transfer) memerlukan koneksi online untuk menjamin integritas saldo dan mencegah double-spending. Mode offline bawaan secara ketat dibatasi untuk pengajuan non-uang."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bagaimana perubahan konfigurasi biaya (fee) dan limit transaksi dikendalikan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Setiap perubahan konfigurasi dikelola sebagai data berversi (immutable versioning) dengan tanggal efektif terencana. Alur perubahan tunduk pada mekanisme Maker-Checker berlapis: staf yang mengusulkan perubahan secara sistemik dilarang menjadi pihak yang menyetujui."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Apakah platform mendukung sistem core banking yang heterogen atau legacy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ya. LAKUPANDAI mengadopsi arsitektur berbasis connector (konektor terisolasi). Tim enterprise architecture bank dapat menghubungkan sistem melalui adapter ISO 8583, ISO 20022, REST API, maupun antrean pesan (message queue)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Bagaimana platform memastikan perlindungan dan kerahasiaan data nasabah?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Perlindungan data dirancang sejak awal (privacy-by-design): data sensitif dimaskir pada antarmuka staf (misalnya nomor kartu/rekening menjadi •••• 1234), pencatatan audit mencatat setiap akses terhadap data pribadi, pengikatan perangkat agen diverifikasi melalui device key unik, dan seluruh komunikasi payload API dienkripsi end-to-end."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Apakah fitur QRIS, terminal EDC fisik, dan kartu e-money sudah termasuk dalam paket dasar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Fitur QRIS MPM/CPM, integrasi terminal EDC proprietary, kartu uang elektronik (chip/NFC), dan aplikasi native khusus (Kotlin/Swift) merupakan cakupan di luar fondasi MVM-1. Kapabilitas tersebut dapat didiskusikan sebagai opsi engagement implementasi terpisah sesuai kesiapan infrastruktur bank."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="bg-[#F8F8F8] text-[#15273A] antialiased selection:bg-[#0056AA] selection:text-white font-sans">
     <div id="root"></div>

@@ -1,0 +1,6 @@
+# robots.txt for LAKUPANDAI by Sundawa
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://lakupandai.sundawa.co.id/sitemap.xml
