@@ -1,19 +1,34 @@
 @import "tailwindcss";
 
 @theme {
+  /* Sundawa Official Brand Colours (Page 5) */
+  --color-sundawa-navy: #0E1E30;
+  --color-sundawa-steel: #1D3451;
+  --color-sundawa-blue: #0056AA;
+  --color-sundawa-blue-hover: #004588;
+  --color-sundawa-blue-light: #EBF3FC;
+  --color-sundawa-gold: #DBC977;
+  --color-sundawa-gold-dark: #A66A2C;
+  --color-sundawa-bg: #F8F8F8;
+  --color-sundawa-white: #FFFFFF;
+  --color-sundawa-dark: #070F18;
+  --color-sundawa-ink: #15273A;
+  --color-sundawa-muted: #64748B;
+  --color-sundawa-border: #DCE3EB;
+
+  /* Aliased to lp-* for backward compatibility */
   --color-lp-navy: #0E1E30;
   --color-lp-navy-2: #1D3451;
   --color-lp-navy-dark: #070F18;
   --color-lp-blue: #0056AA;
-  --color-lp-blue-hover: #004386;
+  --color-lp-blue-hover: #004588;
   --color-lp-blue-light: #EBF3FC;
   --color-lp-gold: #DBC977;
-  --color-lp-gold-muted: #BFA84F;
+  --color-lp-gold-muted: #A66A2C;
   --color-lp-ink: #15273A;
   --color-lp-muted: #64748B;
   --color-lp-border: #DCE3EB;
-  --color-lp-border-light: #EEF2F6;
-  --color-lp-bg: #F8F9FB;
+  --color-lp-bg: #F8F8F8;
   --color-lp-card: #FFFFFF;
   --color-lp-success: #147D64;
   --color-lp-success-bg: #EAF6F2;
@@ -22,21 +37,24 @@
   --color-lp-danger: #B93E42;
   --color-lp-danger-bg: #FDF2F2;
 
-  --font-sans: 'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Montserrat', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Official Sundawa Typography (Page 7: Montserrat) */
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 @layer base {
   body {
-    background-color: #F8F9FB;
+    background-color: #F8F8F8;
     color: #15273A;
+    font-family: var(--font-sans);
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     letter-spacing: -0.02em;
+    font-weight: 700;
   }
 }
 
@@ -54,6 +72,17 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #94A3B8;
+}
+
+/* Sundawa Gold Gradient */
+.sundawa-gold-gradient {
+  background: linear-gradient(135deg, #DBC977 0%, #A66A2C 100%);
+}
+
+.sundawa-gold-text {
+  background: linear-gradient(135deg, #DBC977 0%, #A66A2C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Subtle architectural grid pattern */

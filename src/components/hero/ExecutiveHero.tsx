@@ -20,13 +20,13 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ onOpenDemo }) => {
             {/* Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-700/80 text-blue-300 text-xs font-mono uppercase tracking-wider shadow-sm">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span>AGENT BANKING INFRASTRUCTURE FOR BANKS</span>
+              <span>SUNDAWA ENTERPRISE · AGENT BANKING INFRASTRUCTURE</span>
             </div>
 
             {/* Main H1 Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12]">
               Perluas jangkauan layanan.{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-blue-100 to-amber-200">
+              <span className="sundawa-gold-text">
                 Pertahankan kendali bank.
               </span>
             </h1>
@@ -37,7 +37,7 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ onOpenDemo }) => {
                 Ketika jaringan agen bertambah, tantangannya bukan hanya menghadirkan transaksi lebih dekat ke nasabah. Bank juga perlu menjaga identitas agen, kepastian status transaksi, likuiditas, pengawasan, dan akuntabilitas dalam satu model operasional yang konsisten.
               </p>
               <p>
-                <strong className="text-white font-semibold">LAKUPANDAI</strong> dirancang untuk mendukung operasional agent banking—dari aplikasi agen hingga pengendalian backoffice dan integrasi ke ekosistem bank.
+                <strong className="text-white font-semibold">LAKUPANDAI by Sundawa</strong> dirancang untuk mendukung operasional agent banking—dari aplikasi agen hingga pengendalian backoffice dan integrasi ke ekosistem bank.
               </p>
             </div>
 

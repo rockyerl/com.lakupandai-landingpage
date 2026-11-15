@@ -1,5 +1,4 @@
 import React from 'react';
-import { Building2, ShieldCheck } from 'lucide-react';
 
 interface SiteFooterProps {
   onOpenDemo: () => void;
@@ -13,26 +12,29 @@ export const SiteFooter: React.FC<SiteFooterProps> = ({ onOpenDemo }) => {
           {/* Brand Info (6 Cols) */}
           <div className="md:col-span-6 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">
-                <Building2 className="w-4 h-4" />
-              </div>
+              <img
+                src="/sundawa-logo-dark.png"
+                alt="Sundawa"
+                className="h-12 w-auto object-contain"
+              />
+              <div className="h-9 w-[1px] bg-slate-800 hidden sm:block" />
               <div>
                 <span className="text-base font-bold font-mono text-white tracking-tight flex items-center gap-1.5">
                   LAKUPANDAI
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
                 </span>
                 <span className="text-[10px] font-mono uppercase text-slate-400 block tracking-wider">
-                  Agent Banking Platform
+                  Agent Banking Platform by Sundawa
                 </span>
               </div>
             </div>
 
             <p className="text-xs text-slate-400 leading-relaxed max-w-md">
-              Solusi teknologi untuk operasional agent banking yang dirancang bagi institusi perbankan. Mengoperasikan, mengendalikan, dan mengembangkan jaringan distribusi agen dengan tata kelola terpadu.
+              Solusi teknologi enterprise untuk operasional agent banking yang dirancang bagi institusi perbankan. Mengoperasikan, mengendalikan, dan mengembangkan jaringan distribusi agen dengan tata kelola terpadu.
             </p>
 
-            <div className="pt-2 text-[11px] font-mono text-slate-400">
-              Developed by <strong className="text-slate-300">PT Sundawa Teknologi Indonesia</strong>
+            <div className="pt-1 text-[11px] font-mono text-slate-400">
+              Produk Resmi dari <strong className="text-slate-200">PT Sundawa Teknologi Indonesia</strong>
             </div>
           </div>
 
@@ -101,11 +103,11 @@ export const SiteFooter: React.FC<SiteFooterProps> = ({ onOpenDemo }) => {
         {/* Regulatory & Synthesis Disclaimer */}
         <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-slate-400 font-mono">
           <p className="max-w-2xl leading-relaxed">
-            Seluruh materi, visualisasi alur transaksi, dan metrik pada landing page ini disajikan menggunakan data sintetis demonstrasi untuk kepentingan evaluasi arsitektur perbankan. Implementasi operasional diatur dalam kontrak perjanjian layanan resmi.
+            Seluruh materi, visualisasi alur transaksi, dan metrik pada landing page ini disajikan menggunakan data sintetis demonstrasi untuk kepentingan evaluasi arsitektur perbankan. Implementasi operasional diatur dalam kontrak perjanjian layanan resmi bersama PT Sundawa Teknologi Indonesia.
           </p>
 
           <div className="text-right whitespace-nowrap">
-            © 2026 LAKUPANDAI. All rights reserved.
+            © 2026 PT Sundawa Teknologi Indonesia. All rights reserved.
           </div>
         </div>
       </div>

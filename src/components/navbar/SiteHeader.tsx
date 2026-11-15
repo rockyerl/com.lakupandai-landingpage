@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, ChevronRight, Menu, X, Globe, Building2 } from 'lucide-react';
+import { ChevronRight, Menu, X, Globe } from 'lucide-react';
 
 interface SiteHeaderProps {
   onOpenDemo: () => void;
@@ -34,18 +34,21 @@ export const SiteHeader: React.FC<SiteHeaderProps> = ({ onOpenDemo }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          {/* Brand Logo */}
+          {/* Brand Logo: Sundawa + Product */}
           <a href="#" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-600 to-blue-800 border border-blue-400/40 flex items-center justify-center shadow-inner">
-              <Building2 className="w-5 h-5 text-white" />
-            </div>
+            <img
+              src="/sundawa-logo-dark.png"
+              alt="Sundawa"
+              className="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
+            />
+            <div className="h-7 w-[1px] bg-slate-700/80 mx-0.5 hidden sm:block" />
             <div className="flex flex-col">
-              <span className="text-lg font-bold tracking-tight text-white font-mono leading-none flex items-center gap-1.5">
+              <span className="text-base sm:text-lg font-bold tracking-tight text-white font-mono leading-none flex items-center gap-1.5">
                 LAKUPANDAI
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
               </span>
               <span className="text-[10px] font-mono tracking-wider text-slate-400 uppercase mt-0.5">
-                Agent Banking Platform
+                by PT Sundawa Teknologi Indonesia
               </span>
             </div>
           </a>
