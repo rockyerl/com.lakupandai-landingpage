@@ -56,9 +56,9 @@ export const ProductRoadmap: React.FC = () => {
         {/* 3 Columns Comparison */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
           {/* Column 1: MVM-1 (Base Foundation) */}
-          <div className="bg-[#F8F9FB] rounded-2xl border-2 border-blue-600 p-7 shadow-md flex flex-col justify-between relative overflow-hidden">
-            <div className="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-mono uppercase px-3 py-1 rounded-bl-lg font-bold">
-              CORE FOUNDATION
+          <div className="bg-[#F8F8F8] rounded-2xl border-2 border-[#0056AA] p-7 shadow-md flex flex-col justify-between relative overflow-hidden">
+            <div className="absolute top-0 right-0 btn-sundawa-gold text-[#0E1E30] text-[10px] font-mono uppercase px-3.5 py-1 rounded-bl-lg font-bold shadow-xs">
+              CORE FOUNDATION (MVM-1)
             </div>
 
             <div className="space-y-4">

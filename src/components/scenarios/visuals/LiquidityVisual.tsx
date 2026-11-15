@@ -114,15 +114,15 @@ export const LiquidityVisual: React.FC = () => {
             whileTap={{ scale: 0.95 }}
             onClick={handleRequestTopUp}
             disabled={isTopUpRequested}
-            className={`text-[11px] font-medium px-3 py-1.5 rounded transition shadow-sm flex items-center gap-1.5 cursor-pointer ${
+            className={`text-[11px] font-bold px-3 py-1.5 rounded transition shadow-sm flex items-center gap-1.5 cursor-pointer ${
               isApproved
                 ? 'bg-emerald-600 text-white'
-                : 'bg-blue-600 hover:bg-blue-500 text-white'
+                : 'btn-sundawa-gold text-[#0E1E30]'
             }`}
           >
             {isTopUpRequested ? (
               <>
-                <RefreshCw className="w-3.5 h-3.5 animate-spin" />
+                <RefreshCw className="w-3.5 h-3.5 animate-spin text-[#0E1E30]" />
                 <span>Otorisasi Cabang...</span>
               </>
             ) : isApproved ? (
@@ -133,7 +133,7 @@ export const LiquidityVisual: React.FC = () => {
             ) : (
               <>
                 <span>Ajukan Top-Up Likuiditas</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#0E1E30]" />
               </>
             )}
           </motion.button>

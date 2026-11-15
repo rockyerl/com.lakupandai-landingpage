@@ -219,10 +219,10 @@ export const ScenarioExplorer: React.FC<ScenarioExplorerProps> = ({ onOpenDemo }
               </span>
               <button
                 onClick={() => onOpenDemo(activeScenario.headline)}
-                className="w-full sm:w-auto whitespace-nowrap px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition shadow-md flex items-center justify-center gap-1.5 cursor-pointer"
+                className="w-full sm:w-auto whitespace-nowrap px-4 py-2 rounded-lg btn-sundawa-gold text-[#0E1E30] text-xs font-bold transition shadow-md flex items-center justify-center gap-1.5 cursor-pointer"
               >
-                Bahas Skenario Ini
-                <ArrowRight className="w-3.5 h-3.5" />
+                <span>Bahas Skenario Ini</span>
+                <ArrowRight className="w-3.5 h-3.5 text-[#0E1E30]" />
               </button>
             </div>
           </div>
@@ -251,10 +251,10 @@ export const ScenarioExplorer: React.FC<ScenarioExplorerProps> = ({ onOpenDemo }
           </p>
           <button
             onClick={() => onOpenDemo('General Scenarios')}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition shadow-lg shadow-blue-900/30 cursor-pointer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg btn-sundawa-gold text-[#0E1E30] text-xs sm:text-sm font-bold transition shadow-lg cursor-pointer"
           >
-            Bahas Skenario Bank Anda
-            <ArrowRight className="w-4 h-4" />
+            <span>Bahas Skenario Bank Anda</span>
+            <ArrowRight className="w-4 h-4 text-[#0E1E30]" />
           </button>
         </div>
       </div>

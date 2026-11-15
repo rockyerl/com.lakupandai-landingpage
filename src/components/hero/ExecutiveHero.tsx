@@ -1,6 +1,7 @@
 import React from 'react';
 import { OperationsCockpit } from './OperationsCockpit';
 import { ArrowRight, ChevronRight, ShieldCheck, Server, Lock, Layers } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 interface ExecutiveHeroProps {
   onOpenDemo: () => void;
@@ -8,23 +9,23 @@ interface ExecutiveHeroProps {
 
 export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ onOpenDemo }) => {
   return (
-    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-[#0E1E30] text-white overflow-hidden font-sans border-b border-slate-800">
+    <section className="relative pt-20 pb-14 sm:pt-24 lg:pt-28 lg:pb-18 bg-[#0E1E30] text-white overflow-hidden font-sans border-b border-slate-800">
       {/* Subtle architectural background gradients */}
       <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-blue-600/10 blur-[140px] pointer-events-none rounded-full" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* Left Column: Executive Proposition (7 Cols) */}
-          <div className="lg:col-span-7 space-y-7">
+          <div className="lg:col-span-7 space-y-5 sm:space-y-6">
             {/* Eyebrow Badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/80 border border-slate-700/80 text-blue-300 text-xs font-mono uppercase tracking-wider shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-[#DBC977]/40 text-[#DBC977] text-xs font-mono uppercase tracking-wider shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#DBC977] animate-pulse" />
               <span>SUNDAWA ENTERPRISE · AGENT BANKING INFRASTRUCTURE</span>
             </div>
 
             {/* Main H1 Headline */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12]">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
               Perluas jangkauan layanan.{' '}
               <span className="sundawa-gold-text">
                 Pertahankan kendali bank.
@@ -32,7 +33,7 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ onOpenDemo }) => {
             </h1>
 
             {/* Editorial Executive Body Copy */}
-            <div className="space-y-4 text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            <div className="space-y-3.5 text-sm sm:text-base lg:text-lg text-slate-300 leading-relaxed max-w-2xl font-normal">
               <p>
                 Ketika jaringan agen bertambah, tantangannya bukan hanya menghadirkan transaksi lebih dekat ke nasabah. Bank juga perlu menjaga identitas agen, kepastian status transaksi, likuiditas, pengawasan, dan akuntabilitas dalam satu model operasional yang konsisten.
               </p>
@@ -42,21 +43,23 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ onOpenDemo }) => {
             </div>
 
             {/* CTA Group */}
-            <div className="pt-2 space-y-3">
-              <div className="flex flex-wrap items-center gap-4">
-                <button
+            <div className="pt-1 space-y-3">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
                   onClick={onOpenDemo}
-                  className="px-6 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold tracking-wide transition-all shadow-xl shadow-blue-900/40 hover:shadow-blue-800/60 flex items-center gap-2 cursor-pointer"
+                  className="px-6 py-3.5 rounded-xl btn-sundawa-gold text-sm font-bold tracking-wide transition-all shadow-xl flex items-center gap-2 cursor-pointer"
                 >
-                  Jadwalkan Executive Demo
-                  <ArrowRight className="w-4 h-4" />
-                </button>
+                  <span>Jadwalkan Executive Demo</span>
+                  <ArrowRight className="w-4 h-4 text-[#0E1E30]" />
+                </motion.button>
 
                 <a
                   href="#skenario-bisnis"
-                  className="px-6 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-200 text-sm font-semibold transition flex items-center gap-2"
+                  className="px-6 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700 hover:border-slate-500 text-slate-200 text-sm font-semibold transition flex items-center gap-2 active:scale-98"
                 >
-                  Jelajahi Skenario Bisnis
+                  <span>Jelajahi Skenario Bisnis</span>
                   <ChevronRight className="w-4 h-4 text-slate-400" />
                 </a>
               </div>
@@ -68,28 +71,28 @@ export const ExecutiveHero: React.FC<ExecutiveHeroProps> = ({ onOpenDemo }) => {
             </div>
 
             {/* Executive Architectural Assurance Badges */}
-            <div className="pt-6 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs font-mono text-slate-300">
+            <div className="pt-5 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-3 text-[11px] sm:text-xs font-mono text-slate-300">
               <div className="flex items-center gap-2">
-                <Server className="w-4 h-4 text-blue-400 shrink-0" />
+                <Server className="w-4 h-4 text-[#0056AA] shrink-0" />
                 <span>On-Premise DC/DRC</span>
               </div>
               <div className="flex items-center gap-2">
-                <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
+                <ShieldCheck className="w-4 h-4 text-[#DBC977] shrink-0" />
                 <span>Maker-Checker Segregation</span>
               </div>
               <div className="flex items-center gap-2">
-                <Lock className="w-4 h-4 text-amber-400 shrink-0" />
+                <Lock className="w-4 h-4 text-[#147D64] shrink-0" />
                 <span>Immutable Audit Trail</span>
               </div>
               <div className="flex items-center gap-2">
-                <Layers className="w-4 h-4 text-purple-400 shrink-0" />
+                <Layers className="w-4 h-4 text-blue-400 shrink-0" />
                 <span>Core Adapter Ready</span>
               </div>
             </div>
           </div>
 
           {/* Right Column: Interactive Cockpit Visual (5 Cols) */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative mt-4 lg:mt-0">
             <OperationsCockpit />
           </div>
         </div>

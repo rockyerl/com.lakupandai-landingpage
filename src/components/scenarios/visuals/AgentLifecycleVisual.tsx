@@ -164,9 +164,9 @@ export const AgentLifecycleVisual: React.FC = () => {
               Checker Tertunjuk: <span className="text-slate-200">R. Pratama (Branch Ops Head)</span>
             </p>
           </div>
-          <button className="text-[11px] font-medium bg-blue-600 hover:bg-blue-500 text-white px-3 py-1.5 rounded transition shadow-sm flex items-center gap-1">
-            Simulasi Setujui
-            <ArrowRight className="w-3 h-3" />
+          <button className="text-[11px] font-bold btn-sundawa-gold text-[#0E1E30] px-3 py-1.5 rounded transition shadow-sm flex items-center gap-1 cursor-pointer">
+            <span>Simulasi Setujui</span>
+            <ArrowRight className="w-3 h-3 text-[#0E1E30]" />
           </button>
         </div>
 

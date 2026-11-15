@@ -128,10 +128,10 @@ export const ImplementationTimeline: React.FC<ImplementationTimelineProps> = ({ 
 
           <button
             onClick={() => onOpenDemo('Implementation Planning')}
-            className="whitespace-nowrap px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition shadow-md flex items-center gap-2 cursor-pointer"
+            className="whitespace-nowrap px-6 py-3 rounded-xl btn-sundawa-gold text-[#0E1E30] text-xs sm:text-sm font-bold transition shadow-md flex items-center gap-2 cursor-pointer"
           >
-            Diskusikan Rencana Implementasi
-            <ArrowRight className="w-4 h-4" />
+            <span>Diskusikan Rencana Implementasi</span>
+            <ArrowRight className="w-4 h-4 text-[#0E1E30]" />
           </button>
         </div>
       </div>

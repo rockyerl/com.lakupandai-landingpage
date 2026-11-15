@@ -335,16 +335,16 @@ export const ExecutiveCTA: React.FC<ExecutiveCTAProps> = ({ onFormSubmitted, pre
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-xl shadow-blue-900/40 hover:shadow-blue-800/60 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
+                    className="w-full py-3.5 rounded-xl btn-sundawa-gold text-[#0E1E30] font-bold text-sm transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
                   >
                     {isSubmitting ? (
                       <>
-                        <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                        <span className="w-4 h-4 border-2 border-[#0E1E30]/30 border-t-[#0E1E30] rounded-full animate-spin" />
                         <span>Mengirimkan Permintaan Terenkripsi...</span>
                       </>
                     ) : (
                       <>
-                        <Send className="w-4 h-4" />
+                        <Send className="w-4 h-4 text-[#0E1E30]" />
                         <span>Kirim Permintaan Executive Demo</span>
                       </>
                     )}

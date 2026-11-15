@@ -74,7 +74,7 @@
   background: #94A3B8;
 }
 
-/* Sundawa Gold Gradient */
+/* Sundawa Gold Gradient & Text */
 .sundawa-gold-gradient {
   background: linear-gradient(135deg, #DBC977 0%, #A66A2C 100%);
 }
@@ -83,6 +83,26 @@
   background: linear-gradient(135deg, #DBC977 0%, #A66A2C 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* Sundawa Gold Action Button */
+.btn-sundawa-gold {
+  background: linear-gradient(135deg, #DBC977 0%, #A66A2C 100%);
+  color: #0E1E30;
+  font-weight: 700;
+  box-shadow: 0 4px 16px 0 rgba(219, 201, 119, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-sundawa-gold:hover {
+  background: linear-gradient(135deg, #E8DB96 0%, #B87834 100%);
+  box-shadow: 0 6px 24px 0 rgba(219, 201, 119, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-sundawa-gold:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px 0 rgba(219, 201, 119, 0.3);
 }
 
 /* Subtle architectural grid pattern */

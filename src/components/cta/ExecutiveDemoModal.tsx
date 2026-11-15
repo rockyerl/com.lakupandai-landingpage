@@ -89,7 +89,7 @@ export const ExecutiveDemoModal: React.FC<ExecutiveDemoModalProps> = ({
             <div className="pt-4">
               <button
                 onClick={onClose}
-                className="px-6 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold cursor-pointer shadow-md"
+                className="px-6 py-2.5 rounded-xl btn-sundawa-gold text-[#0E1E30] text-xs font-bold cursor-pointer shadow-md"
               >
                 Kembali ke Halaman Utama
               </button>
@@ -202,7 +202,7 @@ export const ExecutiveDemoModal: React.FC<ExecutiveDemoModalProps> = ({
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs transition shadow-md flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
+                className="w-full py-3 rounded-xl btn-sundawa-gold text-[#0E1E30] font-bold text-xs transition shadow-md flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
               >
                 {isSubmitting ? 'Mengonfirmasi Jadwal...' : 'Konfirmasi Jadwal Demo'}
               </button>

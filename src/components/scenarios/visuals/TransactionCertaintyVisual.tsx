@@ -201,7 +201,7 @@ export const TransactionCertaintyVisual: React.FC = () => {
               </div>
               <button
                 onClick={() => setQrModalOpen(false)}
-                className="w-full py-2 bg-blue-600 hover:bg-blue-500 rounded-lg text-xs font-semibold cursor-pointer"
+                className="w-full py-2 btn-sundawa-gold text-[#0E1E30] font-bold rounded-lg text-xs cursor-pointer shadow-sm"
               >
                 Tutup Pratinjau
               </button>
