@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-lp-navy: #0E1E30;
+  --color-lp-navy-2: #1D3451;
+  --color-lp-navy-dark: #070F18;
+  --color-lp-blue: #0056AA;
+  --color-lp-blue-hover: #004386;
+  --color-lp-blue-light: #EBF3FC;
+  --color-lp-gold: #DBC977;
+  --color-lp-gold-muted: #BFA84F;
+  --color-lp-ink: #15273A;
+  --color-lp-muted: #64748B;
+  --color-lp-border: #DCE3EB;
+  --color-lp-border-light: #EEF2F6;
+  --color-lp-bg: #F8F9FB;
+  --color-lp-card: #FFFFFF;
+  --color-lp-success: #147D64;
+  --color-lp-success-bg: #EAF6F2;
+  --color-lp-warning: #B86B15;
+  --color-lp-warning-bg: #FEF6EB;
+  --color-lp-danger: #B93E42;
+  --color-lp-danger-bg: #FDF2F2;
+
+  --font-sans: 'Plus Jakarta Sans', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Montserrat', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  body {
+    background-color: #F8F9FB;
+    color: #15273A;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom scrollbars and enterprise utilities */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F4F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Subtle architectural grid pattern */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(14, 30, 48, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 30, 48, 0.04) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(14, 30, 48, 0.09) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-dot-pattern-light {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
